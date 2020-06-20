@@ -14,7 +14,7 @@ sxhkd &
 tint2 &
 
 # Set background
-hsetroot -color \#3A6A58
+hsetroot -solid \#3A6A58
 
 # Exec wm
 exec openbox
