@@ -1,0 +1,23 @@
+{
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/Rainglow/rainglow/Rainbow Contrast (rainglow).tmTheme",
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Cascadia Code",
+	"font_size": 12,
+	"highlight_line": 14,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
+	"rulers":
+	[
+		80,
+		120
+	],
+	"tab_size": 4,
+	"theme": "gruvbox.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
+}
