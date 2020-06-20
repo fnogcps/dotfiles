@@ -1,0 +1,28 @@
+# LS_COLORS
+eval $(dircolors -b ~/.dircolors)
+
+# Key bindings
+bind '^L=clear-screen'
+bind '^[Oc=forward-word'
+bind '^[Od=backward-word'
+
+# PS1 prompt
+PS1='$(echo -e "\033[1m\033[32m-\$\033[00m") '
+
+# Shell aliases
+alias ..='cd ..'
+alias ls='ls -X --color'
+alias la='ls -Xla'
+alias l='ls -XF'
+alias mv='mv -v'
+alias cp='cp -v'
+alias rm='rm -vi'
+alias mkdir='mkdir -vp'
+
+# Git aliases
+alias gc='git commit'
+alias gs='git status'
+alias gl='git lo'
+alias ga='git add'
+alias gk='git checkout'
+alias gb='git branch'
