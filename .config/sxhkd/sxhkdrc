@@ -1,0 +1,27 @@
+# Terminal
+control + alt + t
+	urxvt
+
+# Screenshot
+Print
+	maim -s | xclip -selection clipboard -t image/png
+
+# Increases volume by 10%
+super + alt + equal
+	amixer sset 'Master' 10%+
+
+# Decreases volume by 10%
+super + alt + minus
+	amixer sset 'Master' 10%-
+
+# Restart sxhkd
+super + alt + k
+    pkill -USR1 -x sxhkd
+
+# Restart wm
+super + alt + o
+    pkill -USR1 -x openbox
+
+# End wm
+super + alt + x
+    pkill -9 openbox
