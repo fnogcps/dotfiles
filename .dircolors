@@ -1,0 +1,504 @@
+#                                    LS_COLORS
+# Maintainers: Magnus Woldrich <m@japh.se>,
+#              Ryan Delaney <ryan.delaney@gmail.com> OpenGPG: 0D98863B4E1D07B6
+#         URL: https://github.com/trapd00r/LS_COLORS
+#
+#   This is a collection of extension:color mappings, suitable to use as your
+#   LS_COLORS environment variable. Most of them use the extended color map,
+#   described in the ECMA-48 document; in other words, you'll need a terminal
+#   with capabilities of displaying 256 colors.
+#
+#   As of this writing, over 500 different filetypes/extensions are supported.
+#   That's indeed a lot of extensions, but there's a lot more! Therefore I need
+#   your help.
+#
+#   Fork this project on github, add the extensions you are missing, and send me
+#   a pull request.
+#
+#   For files that usually end up next to each other, like html, css and js,
+#   try to pick colors that fit nicely together. Filetypes with multiple
+#   possible extensions, like htm and html, should have the same color.
+
+# This program is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the Perl Artistic License for more details.
+#
+# This program is free software: you can redistribute it and/or modify it under
+# the terms of the Perl Artistic License as published by the Perl Foundation,
+# either version 1.0 of the License, or (at your option) any later version.
+#
+# You should have received a copy of the Perl Artistic License along
+# with this program.  If not, see <http://www.perlfoundation.org/artistic_license_1_0>.
+
+# core
+BLK                   38;5;68
+CAPABILITY            38;5;17
+CHR                   38;5;113;1
+DIR                   38;5;37;1
+DOOR                  38;5;127
+EXEC                  38;5;70;1
+FIFO                  38;5;126
+FILE                  0
+LINK                  38;5;210;1
+MULTIHARDLINK         38;5;222;1
+# "NORMAL don't reset the bold attribute -
+# https://github.com/trapd00r/LS_COLORS/issues/11
+#NORMAL                38;5;254
+NORMAL                0
+ORPHAN                48;5;196;38;5;232;1
+OTHER_WRITABLE        38;5;220;1
+SETGID                48;5;3;38;5;0
+SETUID                38;5;220;1;3;100;1
+SOCK                  38;5;197
+STICKY                38;5;86;48;5;234
+STICKY_OTHER_WRITABLE 48;5;235;38;5;139;3
+
+*LS_COLORS 48;5;89;38;5;197;1;3;4;7 # :-)
+
+# Configs
+*config               38;5;35;1
+*cfg                  38;5;35;1
+*conf                 38;5;35;1
+*rc                   38;5;35;1
+*authorized_keys      38;5;35;1
+*known_hosts          38;5;35;1
+.ini                  38;5;35;1
+.plist                38;5;35;1
+.dircolors            38;5;35;1
+.Xauthority           38;5;35;1
+.Xresources           38;5;35;1
+
+# Sublime Text config
+.hidden-color-scheme  1
+.hidden-tmTheme       1
+.last-run             1
+.merged-ca-bundle     1
+.sublime-build        1
+.sublime-commands     1
+.sublime-keymap       1
+.sublime-settings     1
+.sublime-snippet      1
+.sublime-project      1
+.sublime-workspace    1
+.tmTheme              1
+.user-ca-bundle       1
+
+# Git
+.git                  38;5;197
+.gitignore            38;5;240
+.gitattributes        38;5;240
+.gitmodules           38;5;240
+
+# Code, etc
+.ahk                  38;5;41
+.py                   38;5;41
+.ipynb                38;5;41
+.rb                   38;5;41
+.gemspec              38;5;41
+.pl                   38;5;208
+.PL                   38;5;160
+.t                    38;5;114
+.msql                 38;5;222
+.mysql                38;5;222
+.pgsql                38;5;222
+.sql                  38;5;222
+.tcl                  38;5;64;1
+.r                    38;5;49
+.R                    38;5;49
+.clj                  38;5;41
+.cljs                 38;5;41
+.cljc                 38;5;41
+.cljw                 38;5;41
+.scala                38;5;41
+.dart                 38;5;51
+.asm                  38;5;81
+.cl                   38;5;81
+.lisp                 38;5;81
+.rkt                  38;5;81
+.lua                  38;5;81
+.c                    38;5;27;1
+.C                    38;5;27;1
+.h                    38;5;110
+.H                    38;5;110
+.tcc                  38;5;110
+.c++                  38;5;63
+.h++                  38;5;63
+.hpp                  38;5;63
+.hxx                  38;5;63
+.ii                   38;5;63
+.M                    38;5;63
+.m                    38;5;63
+.cc                   38;5;27;1
+.cs                   38;5;27;1
+.cp                   38;5;27;1
+.cpp                  38;5;27;1
+.cxx                  38;5;27;1
+.cr                   38;5;27;1
+.go                   38;5;27;1
+.rs                   38;5;173;1
+.hs                   38;5;81
+.lhs                  38;5;81
+.pyc                  38;5;240
+.css                  38;5;125;1
+.less                 38;5;125;1
+.sass                 38;5;125;1
+.scss                 38;5;125;1
+.htm                  38;5;125;1
+.html                 38;5;125;1
+.jhtm                 38;5;125;1
+.mht                  38;5;125;1
+.eml                  38;5;125;1
+.mustache             38;5;125;1
+.coffee               38;5;178;1
+.java                 38;5;178;1
+.js                   38;5;178;1
+.mjs                  38;5;178;1
+.jsm                  38;5;178;1
+.jsp                  38;5;178;1
+.php                  38;5;81
+.rake                 38;5;155
+.awk                  38;5;64;1
+.bash                 38;5;64;1
+.bat                  38;5;64;1
+.BAT                  38;5;64;1
+.sed                  38;5;64;1
+.sh                   38;5;64;1
+.zsh                  38;5;64;1
+.vim                  38;5;178
+.kak                  38;5;178
+
+# Patch files
+.diff                 48;5;197;38;5;232
+.patch                48;5;197;38;5;232;1
+
+# Build stuff
+*Dockerfile           38;5;39;1
+.dockerignore         38;5;39
+*Makefile             38;5;203;1
+*MANIFEST             38;5;243
+*pm_to_blib           38;5;240
+.am                   38;5;242
+.in                   38;5;242
+.hin                  38;5;242
+.scan                 38;5;242
+.m4                   38;5;242
+.old                  38;5;242
+.out                  38;5;242
+.SKIP                 38;5;244
+
+# Documents, text, etc
+*README               38;5;148;1
+*README.rst           38;5;148;1
+*README.md            38;5;148;1
+*LICENSE              38;5;148;1
+*COPYING              38;5;148;1
+*INSTALL              38;5;148;1
+*COPYRIGHT            38;5;148;1
+*AUTHORS              38;5;148;1
+*HISTORY              38;5;148;1
+*CONTRIBUTORS         38;5;148;1
+*PATENTS              38;5;148;1
+*VERSION              38;5;148;1
+*NOTICE               38;5;148;1
+*CHANGES              38;5;148;1
+
+.log                  38;5;190
+.txt                  38;5;253
+
+# Markup
+.info                 38;5;148;1
+.markdown             38;5;148;1
+.md                   38;5;148;1
+.mkd                  38;5;148;1
+.json                 38;5;178
+.xml                  38;5;178
+.toml                 38;5;178
+.yaml                 38;5;178
+.yml                  38;5;178
+.dtd                  38;5;178
+.rss                  38;5;178
+.rst                  38;5;148
+.msg                  38;5;178
+
+# Documents, etc
+.chm                  38;5;38
+.pdf                  38;5;38
+.PDF                  38;5;38
+.mobi                 38;5;38
+.epub                 38;5;38
+.csv                  38;5;78
+.tsv                  38;5;78
+
+# Graphics
+.bmp                  38;5;135
+.dicom                38;5;135
+.tiff                 38;5;135
+.tif                  38;5;135
+.TIFF                 38;5;135
+.cdr                  38;5;135
+.flif                 38;5;135
+.gif                  38;5;135
+.icns                 38;5;135
+.ico                  38;5;135
+.jpeg                 38;5;135
+.JPG                  38;5;135
+.jpg                  38;5;135
+.nth                  38;5;135
+.png                  38;5;135
+.psd                  38;5;135
+.pxd                  38;5;135
+.pxm                  38;5;135
+.xpm                  38;5;135
+.webp                 38;5;135
+.svg                  38;5;135
+
+# Video
+.avi                  38;5;131
+.divx                 38;5;131
+.IFO                  38;5;131
+.m2v                  38;5;131
+.m4v                  38;5;131
+.mkv                  38;5;131
+.MOV                  38;5;131
+.mov                  38;5;131
+.mp4                  38;5;131
+.mpeg                 38;5;131
+.mpg                  38;5;131
+.ogm                  38;5;131
+.rmvb                 38;5;131
+.sample               38;5;131
+.wmv                  38;5;131
+
+# Mobile and streaming
+.3g2                  38;5;131
+.3gp                  38;5;131
+.gp3                  38;5;131
+.webm                 38;5;131
+.gp4                  38;5;131
+.asf                  38;5;131
+.flv                  38;5;131
+.ts                   38;5;131
+.ogv                  38;5;131
+.f4v                  38;5;131
+
+# Subtitles
+.srt                  38;5;117
+.sub                  38;5;117
+.vtt                  38;5;117
+
+# Audio
+.3ga                  38;5;139
+.S3M                  38;5;139
+.aac                  38;5;139
+.amr                  38;5;139
+.au                   38;5;139
+.caf                  38;5;139
+.dat                  38;5;139
+.dts                  38;5;139
+.fcm                  38;5;139
+.m4a                  38;5;139
+.mid                  38;5;139
+.mod                  38;5;139
+.mp3                  38;5;139
+.mp4a                 38;5;139
+.oga                  38;5;139
+.ogg                  38;5;139
+.opus                 38;5;139
+.s3m                  38;5;139
+.sid                  38;5;139
+.wma                  38;5;139
+.ape                  38;5;139;1
+.aiff                 38;5;139;1
+.cda                  38;5;139;1
+.flac                 38;5;139;1
+.alac                 38;5;139;1
+.midi                 38;5;139;1
+.pcm                  38;5;139;1
+.wav                  38;5;139;1
+.wv                   38;5;139;1
+.wvc                  38;5;139;1
+
+# Fonts
+.ttf                  38;5;29;1
+.otf                  38;5;29;1
+.woff                 38;5;29;1
+.woff2                38;5;29;1
+.ttc                  38;5;29;1
+
+# Archives
+.7z                   38;5;130;1
+.a                    38;5;130;1
+.arj                  38;5;130;1
+.bz2                  38;5;130;1
+.cpio                 38;5;130;1
+.gz                   38;5;130;1
+.lrz                  38;5;130;1
+.lz                   38;5;130;1
+.lzma                 38;5;130;1
+.lzo                  38;5;130;1
+.rar                  38;5;130;1
+.s7z                  38;5;130;1
+.sz                   38;5;130;1
+.tar                  38;5;130;1
+.tgz                  38;5;130;1
+.xz                   38;5;130;1
+.z                    38;5;130;1
+.zip                  38;5;130;1
+.zipx                 38;5;130;1
+.zoo                  38;5;130;1
+.zpaq                 38;5;130;1
+.zst                  38;5;130;1
+.zstd                 38;5;130;1
+.zz                   38;5;130;1
+
+# Packaged apps
+.apk                  38;5;100;1
+.ipa                  38;5;100;1
+.deb                  38;5;100;1
+.rpm                  38;5;100;1
+.jad                  38;5;100;1
+.jar                  38;5;100;1
+.cab                  38;5;100;1
+.pak                  38;5;100;1
+.pk3                  38;5;100;1
+.vdf                  38;5;100;1
+.vpk                  38;5;100;1
+.bsp                  38;5;100;1
+.dmg                  38;5;100;1
+
+# Partition images
+.iso                  38;5;124
+.bin                  38;5;124
+.nrg                  38;5;124
+.vcd                  38;5;124
+.vmdk                 38;5;124
+
+# Databases
+.accdb                38;5;60
+.accde                38;5;60
+.accdr                38;5;60
+.accdt                38;5;60
+.db                   38;5;60
+.fmp12                38;5;60
+.fp7                  38;5;60
+.localstorage         38;5;60
+.mdb                  38;5;60
+.mde                  38;5;60
+.sqlite               38;5;60
+.typelib              38;5;60
+
+# Temporary files
+.pacnew               38;5;33
+.un~                  38;5;244
+.orig                 38;5;244
+.swp                  38;5;244
+.swo                  38;5;244
+.tmp                  38;5;244
+.sassc                38;5;244
+.viminfo              38;5;244
+.lesshst              38;5;244
+
+# Backups files
+.bkp                  38;5;34;1
+.BKP                  38;5;34;1
+.bak                  38;5;34;1
+
+# Others
+.pid                  38;5;248
+.state                38;5;248
+*lockfile             38;5;248
+*lock                 38;5;248
+.o                    38;5;241 #   *nix Object file (shared libraries, core dumps etc)
+*core                 38;5;241 #   Linux user core dump file (from /proc/sys/kernel/core_pattern)
+.mdump                38;5;241 #   Mini DuMP crash report
+.rlib                 38;5;241 #   Static rust library
+.dll                  38;5;241 #   dynamic linked library
+
+# Error logs, state dumps
+.err                  38;5;160;1
+.error                38;5;160;1
+.stderr               38;5;160;1
+.aria2                38;5;241
+.dump                 38;5;241
+.stackdump            38;5;241
+.zcompdump            38;5;241
+.zwc                  38;5;241
+.zwc                  38;5;241
+# tcpdump, network traffic capture
+.pcap                 38;5;29
+.cap                  38;5;29
+.dmp                  38;5;29
+
+.service              38;5;45
+*@.service            38;5;45
+.socket               38;5;45
+.swap                 38;5;45
+.device               38;5;45
+.mount                38;5;45
+.automount            38;5;45
+.target               38;5;45
+.path                 38;5;45
+.timer                38;5;45
+.snapshot             38;5;45
+
+# Metadata
+.application          38;5;116
+.cue                  38;5;116
+.description          38;5;116
+.directory            38;5;116
+.m3u                  38;5;116
+.m3u8                 38;5;116
+.md5                  38;5;116
+.properties           38;5;116
+.sfv                  38;5;116
+.theme                38;5;116
+.torrent              38;5;116
+.urlview              38;5;116
+.webloc               38;5;116
+.lnk                  38;5;39
+
+# Encrypted data
+.asc                  38;5;192;3
+.bfe                  38;5;192;3
+.enc                  38;5;192;3
+.gpg                  38;5;192;3
+.signature            38;5;192;3
+.sig                  38;5;192;3
+.p12                  38;5;192;3
+.pem                  38;5;192;3
+.pgp                  38;5;192;3
+.p7s                  38;5;192;3
+*id_dsa                38;5;192;3
+*id_rsa                38;5;192;3
+*id_ecdsa              38;5;192;3
+*id_ed25519            38;5;192;3
+
+# GIMP files
+.gbr                  38;5;7
+.scm                  38;5;7
+.xcf                  38;5;7
+
+.r[0-9]{0,2}          38;5;239
+.zx[0-9]{0,2}         38;5;239
+.z[0-9]{0,2}          38;5;239
+.part                 38;5;239
+
+# termcap
+TERM ansi
+TERM color-xterm
+TERM linux
+TERM linux-c
+TERM putty
+TERM rxvt
+TERM rxvt-256color
+TERM rxvt-unicode
+TERM rxvt-unicode-256color
+TERM rxvt-unicode256
+TERM screen
+TERM screen-256color
+TERM screen.rxvt
+TERM vt100
+TERM xterm
+TERM xterm-256color
+
+# vim: ft=dircolors:fdm=marker:et:sw=2:
