@@ -1,0 +1,23 @@
+#!/usr/bin/env mksh
+
+c10=$'\e[1;32m'
+c12=$'\e[1;33m'
+c13=$'\e[1;37m'
+
+DISTRO='Void Linux'
+KERNEL_RELEASE=`uname -r`
+PKGNUM="$(xbps-query -l | wc -l)"
+UPTIME=`uptime -p | sed 's/up //'`
+WM="$(tail -n 1 "${HOME}/.xinitrc" | cut -d ' ' -f 2)"
+
+cat << EOF
+
+  ${c10}• ${c12}distro     ${c13}$DISTRO
+  ${c10}• ${c12}kernel     ${c13}$KERNEL_RELEASE
+  ${c10}• ${c12}packages   ${c13}$PKGNUM
+  ${c10}• ${c12}term       ${c13}$TERM
+  ${c10}• ${c12}shell      ${c13}$(basename "$SHELL")
+  ${c10}• ${c12}wm         ${c13}$WM
+
+EOF
+
