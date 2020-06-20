@@ -1,0 +1,29 @@
+urxvt*font: xft:         Cascadia Code:size=12
+urxvt*foreground:        #c3eab9
+urxvt*background:        [95]#131b18
+urxvt*depth:             32
+urxvt*cursorColor:       #4df543
+urxvt*scrollBar:         false
+
+*.color0:                #131b18
+*.color1:                #f49c3f
+*.color2:                #4df543
+*.color3:                #87f658
+*.color4:                #0ac69b
+*.color5:                #12f288
+*.color6:                #47f56b
+*.color7:                #c3eab9
+*.color8:                #88a381
+*.color9:                #f49c3f
+*.color10:               #4df542
+*.color11:               #87f657
+*.color12:               #0ac68b
+*.color13:               #11f288
+*.color14:               #46f56b
+*.color15:               #c2eab9
+*.color66:               #130b18
+
+! key bindings
+urxvt*perl-ext:          default,url-select
+urxvt*perl-ext-common:   default,fullscreen
+urxvt*keysym.F11:        perl:fullscreen:switch
