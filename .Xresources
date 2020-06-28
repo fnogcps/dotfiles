@@ -1,9 +1,12 @@
-urxvt*font: xft:         Cascadia Code:size=12
+urxvt*font:              xft:Cascadia Code:size=12
 urxvt*foreground:        #c3eab9
 urxvt*background:        [95]#131b18
 urxvt*depth:             32
 urxvt*cursorColor:       #4df543
 urxvt*scrollBar:         false
+urxvt*perl-ext:          default,url-select
+urxvt*perl-ext-common:   default,fullscreen,resize-font
+urxvt*keysym.F11:        perl:fullscreen:switch
 
 *.color0:                #131b18
 *.color1:                #f49c3f
@@ -22,8 +25,3 @@ urxvt*scrollBar:         false
 *.color14:               #46f56b
 *.color15:               #c2eab9
 *.color66:               #130b18
-
-! key bindings
-urxvt*perl-ext:          default,url-select
-urxvt*perl-ext-common:   default,fullscreen
-urxvt*keysym.F11:        perl:fullscreen:switch
